@@ -1,0 +1,31 @@
+pipeline{
+    
+    agent any:
+    
+    
+    stages{
+        stage("code"){
+            steps{
+                echo "first stage"
+            }
+            
+        }
+        stage("build"){
+            steps{
+                echo "first stage"
+                sh "docker build -t notes-pp;la "
+            }
+        }
+        stage("test"){
+            steps{
+                echo "first stage"
+            }
+        }
+        stage("deploy"){
+            steps{
+                echo "first stage"
+            }
+        }
+    }
+    
+}}
